@@ -259,7 +259,7 @@ button,
 .container {
   *zoom: 1;
   width: auto;
-  max-width: 42em;
+  max-width: 65em;
   float: none;
   display: block;
   margin-right: auto;
@@ -363,7 +363,7 @@ button,
   margin-top: -25px;
   margin-left: 125px;
   text-align: right;
-  max-width: 525px;
+  max-width: 880px;
 }
 
 .post-tags a {
@@ -371,3 +371,6 @@ button,
   opacity: 0.8;
 }
 
+.site-title img {
+  margin: 0;
+}
