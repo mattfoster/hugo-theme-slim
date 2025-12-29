@@ -1,0 +1,19 @@
+{{ $src := .Get "src" | default (.Get 0) }}
+{{ $alt := .Get "alt" }}
+{{ $caption := .Get "caption" }}
+{{ $video := .Page.Resources.GetMatch $src }}
+{{ with $video }}
+<figure>
+  <video controls style="max-width: 100%; width: auto; height: auto;"{{ with $alt }} title="{{ . }}"{{ end }}>
+    <source src="{{ .RelPermalink }}" type="{{ .MediaType }}">
+    Your browser does not support the video tag.
+  </video>
+  {{ with $caption }}
+  <figcaption>
+    <small>{{ . }}</small>
+  </figcaption>
+  {{ end }}
+</figure>
+{{ else }}
+{{ errorf "Video not found: %s" $src }}
+{{ end }}
