@@ -137,11 +137,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   border-radius: 4px;
-  background-color: #f9f9f9; }"
-      title="Keyboard logo"
-      link="https://javl.github.io/image2cpp/"
-      alt="My custom logo, it's a left hand, face down, and the word 'lefty'"
-      >}}
+  background-color: #f9f9f9; }
 pre code {
   font-family: 'Iosevka', 'SF Mono', Monaco, Menlo, Consolas, monospace;
   font-size: 0.7rem;
@@ -288,7 +284,6 @@ button,
     bottom: -6px; }
 
 .container {
-  *zoom: 1;
   width: auto;
   max-width: 65em;
   float: none;

@@ -3,7 +3,8 @@
   "description": "Slim is a minimal, clean and beautiful theme for [Hugo](http://gohugo.io/).",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:css": "uv run scripts/lint_css.py",
+    "test": "uv run scripts/lint_css.py"
   },
   "repository": {
     "type": "git",

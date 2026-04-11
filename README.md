@@ -60,6 +60,20 @@ params:
 hugo server -t slim
 ```
 
+## Lint CSS
+
+Run the CSS syntax linter with `uv`:
+
+```bash
+uv run scripts/lint_css.py
+```
+
+Or through the existing package script:
+
+```bash
+npm test
+```
+
 
 ## License
 
