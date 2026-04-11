@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/iosevka/Iosevka-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/iosevka/Iosevka-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/iosevka/Iosevka-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url('/fonts/iosevka/Iosevka-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 html {
   box-sizing: border-box; }
 
@@ -40,12 +68,12 @@ tbody tr:nth-child(odd) th {
 
 body {
   color: #555;
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, Serif;
+  font-family: 'Iosevka', 'SF Mono', Monaco, Menlo, Consolas, monospace;
   font-size: 100%;
   font-weight: 400;
   line-height: 1.85;
   margin: 2em;
-  letter-spacing: 0.01rem; }
+  letter-spacing: 0; }
 
 h1,
 h2,
@@ -56,7 +84,7 @@ h6 {
   font-weight: 700;
   line-height: 1.25;
   margin-bottom: 0.75rem;
-  font-family: 'Source Sans Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  font-family: 'Iosevka', 'SF Mono', Monaco, Menlo, Consolas, monospace; }
 
 h1 {
   font-size: 1.8rem; }
@@ -89,7 +117,7 @@ em {
 }
 
 code {
-  font-family: 'Source Code Pro', Monaco, Courier, monospace;
+  font-family: 'Iosevka', 'SF Mono', Monaco, Menlo, Consolas, monospace;
   font-size: 0.85rem;
   color: #555;
   background-color: #f5f5f5;
@@ -115,7 +143,7 @@ pre {
       alt="My custom logo, it's a left hand, face down, and the word 'lefty'"
       >}}
 pre code {
-  font-family: 'Source Code Pro', Menlo, Monaco, Courier, monospace;
+  font-family: 'Iosevka', 'SF Mono', Monaco, Menlo, Consolas, monospace;
   font-size: 0.7rem;
   padding: 0;
   color: inherit;
