@@ -1,24 +1,30 @@
 <div class="header">
-  <h1 class="site-title"><a href="{{ .Site.BaseURL }}">
-    <object type="image/svg+xml" data="{{ .Site.Params.Logo }}"></object>
+  <h1 class="site-title"><a href="/">
+    <span class="site-logo">
+      <img class="site-logo-default" src="{{ .Site.Params.Logo }}" alt="{{ .Site.Title }}">
+      {{ with .Site.Params.Logolight }}
+      <img class="site-logo-light" src="{{ . }}" alt="{{ $.Site.Title }}">
+      {{ end }}
+    </span>
   </a></h1>
-  <p class="site-tagline">{{ .Site.Params.Subtitle }}</p>
-  <div class="nav">
-    <a class="nav-btn" href="#">
-      <span class="ci ci-burger"></span>
-    </a>
-    <ul class="nav-list">
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-      {{end}}
+  <div class="site-subheader">
+    <div class="nav">
+      <a class="nav-btn" href="#">
+        <span class="ci ci-burger"></span>
+      </a>
+      <ul class="nav-list">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{end}}
 	  <li class="spacer">&ac;</li>
 {{ with .Site.Params.GithubID }}
-      <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.MastodonId }}
-      <li><a href="https://mastodon.radio/{{.}}">Mastodon</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
-      <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
-      <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }} {{ with .Site.Params.QRZID }}
-      <li><a href="https://www.qrz.com/db/{{.}}">QRZ</a></li>{{ end }}
-    </ul>
+        <li><a href="https://github.com/{{.}}">Github</a></li>{{ end }} {{ with .Site.Params.MastodonId }}
+        <li><a href="https://mastodon.radio/{{.}}">Mastodon</a></li>{{ end }} {{ with .Site.Params.TwitterID }}
+        <li><a href="https://twitter.com/{{.}}">Twitter</a></li>{{ end }} {{ with .Site.Params.LinkedInID }}
+        <li><a href="http://linkedin.com/in/{{.}}">LinkedIn</a></li>{{ end }} {{ with .Site.Params.QRZID }}
+        <li><a href="https://www.qrz.com/db/{{.}}">QRZ</a></li>{{ end }}
+      </ul>
+    </div>
+    <p class="site-tagline">{{ .Site.Params.Subtitle }}</p>
   </div>
 </div>
-
