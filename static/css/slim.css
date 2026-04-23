@@ -160,6 +160,15 @@ a {
     color: var(--color-background);
     background: var(--color-link-highlight); }
 
+.post-content a,
+.extra a,
+.summary a {
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.12em;
+  text-decoration-color: currentColor;
+}
+
 em {
   color: var(--color-link-highlight);
 }
